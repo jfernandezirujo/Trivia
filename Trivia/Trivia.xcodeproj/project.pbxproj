@@ -14,6 +14,7 @@
 		D93DEE1A259E1F5C004F91D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93DEE19259E1F5C004F91D9 /* Assets.xcassets */; };
 		D93DEE1D259E1F5C004F91D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93DEE1B259E1F5C004F91D9 /* LaunchScreen.storyboard */; };
 		D93DEE25259E22F3004F91D9 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE24259E22F3004F91D9 /* PickerTableViewCell.swift */; };
+		D93DEE29259E2738004F91D9 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE28259E2738004F91D9 /* Field.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D93DEE1C259E1F5C004F91D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93DEE1E259E1F5C004F91D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93DEE24259E22F3004F91D9 /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		D93DEE28259E2738004F91D9 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D93DEE12259E1F5B004F91D9 /* SceneDelegate.swift */,
 				D93DEE14259E1F5B004F91D9 /* HomeViewController.swift */,
 				D93DEE24259E22F3004F91D9 /* PickerTableViewCell.swift */,
+				D93DEE28259E2738004F91D9 /* Field.swift */,
 				D93DEE16259E1F5B004F91D9 /* Main.storyboard */,
 				D93DEE19259E1F5C004F91D9 /* Assets.xcassets */,
 				D93DEE1B259E1F5C004F91D9 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				D93DEE15259E1F5B004F91D9 /* HomeViewController.swift in Sources */,
 				D93DEE25259E22F3004F91D9 /* PickerTableViewCell.swift in Sources */,
+				D93DEE29259E2738004F91D9 /* Field.swift in Sources */,
 				D93DEE11259E1F5B004F91D9 /* AppDelegate.swift in Sources */,
 				D93DEE13259E1F5B004F91D9 /* SceneDelegate.swift in Sources */,
 			);
