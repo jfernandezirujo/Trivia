@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		D93DEE11259E1F5B004F91D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE10259E1F5B004F91D9 /* AppDelegate.swift */; };
 		D93DEE13259E1F5B004F91D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE12259E1F5B004F91D9 /* SceneDelegate.swift */; };
-		D93DEE15259E1F5B004F91D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE14259E1F5B004F91D9 /* ViewController.swift */; };
+		D93DEE15259E1F5B004F91D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE14259E1F5B004F91D9 /* HomeViewController.swift */; };
 		D93DEE18259E1F5B004F91D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93DEE16259E1F5B004F91D9 /* Main.storyboard */; };
 		D93DEE1A259E1F5C004F91D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93DEE19259E1F5C004F91D9 /* Assets.xcassets */; };
 		D93DEE1D259E1F5C004F91D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93DEE1B259E1F5C004F91D9 /* LaunchScreen.storyboard */; };
+		D93DEE25259E22F3004F91D9 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE24259E22F3004F91D9 /* PickerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D93DEE0D259E1F5B004F91D9 /* Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93DEE10259E1F5B004F91D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D93DEE12259E1F5B004F91D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D93DEE14259E1F5B004F91D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D93DEE14259E1F5B004F91D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D93DEE17259E1F5B004F91D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D93DEE19259E1F5C004F91D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D93DEE1C259E1F5C004F91D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93DEE1E259E1F5C004F91D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93DEE24259E22F3004F91D9 /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				D93DEE10259E1F5B004F91D9 /* AppDelegate.swift */,
 				D93DEE12259E1F5B004F91D9 /* SceneDelegate.swift */,
-				D93DEE14259E1F5B004F91D9 /* ViewController.swift */,
+				D93DEE14259E1F5B004F91D9 /* HomeViewController.swift */,
+				D93DEE24259E22F3004F91D9 /* PickerTableViewCell.swift */,
 				D93DEE16259E1F5B004F91D9 /* Main.storyboard */,
 				D93DEE19259E1F5C004F91D9 /* Assets.xcassets */,
 				D93DEE1B259E1F5C004F91D9 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93DEE15259E1F5B004F91D9 /* ViewController.swift in Sources */,
+				D93DEE15259E1F5B004F91D9 /* HomeViewController.swift in Sources */,
+				D93DEE25259E22F3004F91D9 /* PickerTableViewCell.swift in Sources */,
 				D93DEE11259E1F5B004F91D9 /* AppDelegate.swift in Sources */,
 				D93DEE13259E1F5B004F91D9 /* SceneDelegate.swift in Sources */,
 			);
