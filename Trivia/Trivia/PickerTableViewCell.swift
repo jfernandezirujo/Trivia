@@ -14,10 +14,11 @@ class PickerTableViewCell: UITableViewCell {
     @IBOutlet var textField: UITextField!
     
     var field: Field?
-    
+    var indexPath: IndexPath?
 
-    func configureCell(field: Field) {
+    func configureCell(field: Field, indexPath: IndexPath) {
         self.field = field
+        self.indexPath = indexPath
         lblTitle.text = field.title
         configurePicker()
     }
@@ -28,6 +29,22 @@ class PickerTableViewCell: UITableViewCell {
         picker.dataSource = self
         textField.inputView = picker
         
+        
+    }
+    
+    func setValueToBuilder(value: String) {
+        switch indexPath?.row {
+        case 0:
+            TriviaBuilder.amount = value
+        case 1:
+            TriviaBuilder.category = value
+        case 2:
+            TriviaBuilder.difficulty = value
+        case 3:
+            TriviaBuilder.type = value
+        default:
+            break
+        }
     }
 
 }
@@ -45,5 +62,9 @@ extension PickerTableViewCell : UIPickerViewDelegate, UIPickerViewDataSource {
         return field?.options[row]
     }
     
-    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        textField.text = field?.options[row]
+        setValueToBuilder(value: textField.text ?? "")
+        textField.resignFirstResponder()
+    }
 }
