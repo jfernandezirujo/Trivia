@@ -44,7 +44,7 @@ class TriviaRepository {
         
         var urlString = "https://opentdb.com/api.php?amount=\(amount)&category=\(id)"
         
-        if let enumType = Type(rawValue: type), enumType != .any {
+        if let enumType = Type(rawValue: type) {
             urlString.append("&type=\(enumType.parameterValue ?? "")")
         }
         

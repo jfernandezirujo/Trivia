@@ -24,6 +24,7 @@ class QuestionsAndAnswers {
         })
         
         self.correctAnswer = json["correct_answer"].stringValue
+        TriviaBuilder.type = Type.buildType(string: json["type"].stringValue) ?? ""
     }
     
 }

@@ -14,8 +14,6 @@ struct TriviaBuilder {
     static var category: String = ""
     static var difficulty: String = ""
     static var type: String = ""
-    
-    
 }
 
 struct TriviaBuilderResults {

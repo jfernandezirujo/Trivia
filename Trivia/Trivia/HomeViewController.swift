@@ -77,7 +77,7 @@ class HomeViewController: UIViewController {
             }
             
             else if let questionAndAnswers = questionAndAnswers{
-                if TriviaBuilder.type == Type.trueOrFalse.rawValue {
+                if TriviaBuilder.type == Type.trueOrFalse.rawValue || TriviaBuilder.type == Type.any.rawValue {
                     if let vc = self.storyboard?.instantiateViewController(withIdentifier: "trueOrFalse") as? TrueOrFalseViewController{
                         vc.arrayQAA = questionAndAnswers
                         

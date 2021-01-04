@@ -24,7 +24,7 @@ enum Difficulty: String {
                case .hard:
                    return "hard"
                case .any:
-                   return nil
+                   return "medium"
                }
     }
 }
