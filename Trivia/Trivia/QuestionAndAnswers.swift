@@ -12,12 +12,17 @@ import SwiftyJSON
 class QuestionsAndAnswers {
     
     var question: String
-    var incorrectAnswers: String
+    var incorrectAnswersArray: [String]
     var correctAnswer: String
+    
+    
     
     init(json: JSON) {
         self.question = json["question"].stringValue
-        self.incorrectAnswers = json["incorrect_answers"].stringValue
+        self.incorrectAnswersArray = json["incorrect_answers"].arrayValue.map({json in
+            json.stringValue
+        })
+        
         self.correctAnswer = json["correct_answer"].stringValue
     }
     

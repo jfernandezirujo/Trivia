@@ -18,6 +18,8 @@
 		D93DEE29259E2738004F91D9 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE28259E2738004F91D9 /* Field.swift */; };
 		D93DEE2B259E6172004F91D9 /* TriviaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE2A259E6172004F91D9 /* TriviaRepository.swift */; };
 		D93DEE2D259E735F004F91D9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93DEE2C259E735F004F91D9 /* Category.swift */; };
+		D969B9F325A35D7100140BA5 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969B9F225A35D7100140BA5 /* ResultsViewController.swift */; };
+		D98B10E925A2C638001761FD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B10E825A2C638001761FD /* Extension.swift */; };
 		D9FFD24C259F7C4F00B48495 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FFD24B259F7C4F00B48495 /* Difficulty.swift */; };
 		D9FFD250259FB1E800B48495 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FFD24F259FB1E800B48495 /* Type.swift */; };
 		D9FFD252259FBC7200B48495 /* QuestionAndAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FFD251259FBC7200B48495 /* QuestionAndAnswers.swift */; };
@@ -41,6 +43,8 @@
 		D93DEE28259E2738004F91D9 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		D93DEE2A259E6172004F91D9 /* TriviaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaRepository.swift; sourceTree = "<group>"; };
 		D93DEE2C259E735F004F91D9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D969B9F225A35D7100140BA5 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		D98B10E825A2C638001761FD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		D9A9ED1D50491EC9E2E012FF /* Pods-Trivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia.debug.xcconfig"; path = "Target Support Files/Pods-Trivia/Pods-Trivia.debug.xcconfig"; sourceTree = "<group>"; };
 		D9FFD24B259F7C4F00B48495 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		D9FFD24F259FB1E800B48495 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
@@ -101,14 +105,16 @@
 			isa = PBXGroup;
 			children = (
 				D93DEE10259E1F5B004F91D9 /* AppDelegate.swift */,
+				D98B10E825A2C638001761FD /* Extension.swift */,
 				D93DEE12259E1F5B004F91D9 /* SceneDelegate.swift */,
 				D93DEE14259E1F5B004F91D9 /* HomeViewController.swift */,
 				D93DEE24259E22F3004F91D9 /* PickerTableViewCell.swift */,
 				D93DEE16259E1F5B004F91D9 /* Main.storyboard */,
 				D93DEE19259E1F5C004F91D9 /* Assets.xcassets */,
+				D969B9F225A35D7100140BA5 /* ResultsViewController.swift */,
 				D9FFD25525A0FD0000B48495 /* MultipleChoiceViewController.swift */,
-				D93DEE1B259E1F5C004F91D9 /* LaunchScreen.storyboard */,
 				D9FFD25725A0FD0F00B48495 /* TrueOrFalseViewController.swift */,
+				D93DEE1B259E1F5C004F91D9 /* LaunchScreen.storyboard */,
 				D93DEE1E259E1F5C004F91D9 /* Info.plist */,
 				D93DEE28259E2738004F91D9 /* Field.swift */,
 				D93DEE2A259E6172004F91D9 /* TriviaRepository.swift */,
@@ -244,7 +250,9 @@
 				D93DEE11259E1F5B004F91D9 /* AppDelegate.swift in Sources */,
 				D9FFD250259FB1E800B48495 /* Type.swift in Sources */,
 				D9FFD24C259F7C4F00B48495 /* Difficulty.swift in Sources */,
+				D969B9F325A35D7100140BA5 /* ResultsViewController.swift in Sources */,
 				D9FFD25825A0FD0F00B48495 /* TrueOrFalseViewController.swift in Sources */,
+				D98B10E925A2C638001761FD /* Extension.swift in Sources */,
 				D93DEE13259E1F5B004F91D9 /* SceneDelegate.swift in Sources */,
 				D9FFD252259FBC7200B48495 /* QuestionAndAnswers.swift in Sources */,
 				D93DEE2D259E735F004F91D9 /* Category.swift in Sources */,

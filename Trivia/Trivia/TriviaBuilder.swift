@@ -17,3 +17,9 @@ struct TriviaBuilder {
     
     
 }
+
+struct TriviaBuilderResults {
+    static var incorrectAnswers: Int = 0
+    static var correctAnswers: Int = 0
+    
+}

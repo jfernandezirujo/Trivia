@@ -17,11 +17,19 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createFields()
+        configUI()
+        
+    }
+    
+    func configUI() {
+        btnContinue.configureBtns()
+        btnContinue.setTitle("Comenzar", for: .normal)
+        
+        title = "Inicio"
         
     }
     
     func createFields() {
-        
         var numberOfQuestions = Field(title: "Cantidad de preguntas", options: [])
         for number in 1...50 {
             numberOfQuestions.options.append(String(number))
@@ -49,6 +57,7 @@ class HomeViewController: UIViewController {
         fields = [numberOfQuestions, category, difficulty, type]
     }
     
+    
     func getCategory() -> Category? {
         guard let category = categories.first(where: { cat in
             cat.name == TriviaBuilder.category
@@ -59,20 +68,18 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func continueTrivia() {
-        
         guard let idCategory = getCategory()?.id else { return }
         
-        TriviaRepository.getQuestion(amount: TriviaBuilder.amount, id: idCategory, type: TriviaBuilder.type, completionHandler: { error, categories in
+        TriviaRepository.getQuestion(amount: TriviaBuilder.amount, id: idCategory, type: TriviaBuilder.type, completionHandler: { error, questionAndAnswers in
             
             if let error = error{
                 print(error)
             }
-                
-            else if let categories = categories {
-                
+            
+            else if let questionAndAnswers = questionAndAnswers{
                 if TriviaBuilder.type == Type.trueOrFalse.rawValue {
-                    
                     if let vc = self.storyboard?.instantiateViewController(withIdentifier: "trueOrFalse") as? TrueOrFalseViewController{
+                        vc.arrayQAA = questionAndAnswers
                         
                         self.navigationController?.pushViewController(vc, animated: true)
                     }
@@ -81,6 +88,7 @@ class HomeViewController: UIViewController {
                 
                 else if TriviaBuilder.type == Type.multipleChoice.rawValue {
                     if let vc = self.storyboard?.instantiateViewController(withIdentifier: "multiple") as? MultipleChoiceViewController{
+                        vc.arrayQAA = questionAndAnswers
                                            
                     self.navigationController?.pushViewController(vc, animated: true)
                                        }
@@ -91,6 +99,10 @@ class HomeViewController: UIViewController {
         
     }
 }
+
+
+
+
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -108,6 +120,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 125
+        return 145
+        
     }
+
 }

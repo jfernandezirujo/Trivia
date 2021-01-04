@@ -56,7 +56,7 @@ class TriviaRepository {
             }
         else if let value = response.value {
             let json = JSON(value)
-            let jsonArray = json.arrayValue
+            let jsonArray = json["results"].arrayValue
             
             var arrayQAA: [QuestionsAndAnswers] = []
             

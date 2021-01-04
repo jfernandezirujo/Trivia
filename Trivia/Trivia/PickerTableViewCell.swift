@@ -20,6 +20,7 @@ class PickerTableViewCell: UITableViewCell {
         self.field = field
         self.indexPath = indexPath
         lblTitle.text = field.title
+        
         configurePicker()
     }
     
