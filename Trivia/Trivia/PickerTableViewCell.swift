@@ -47,6 +47,8 @@ class PickerTableViewCell: UITableViewCell {
             break
         }
     }
+    
+ 
 
 }
 
@@ -67,5 +69,7 @@ extension PickerTableViewCell : UIPickerViewDelegate, UIPickerViewDataSource {
         textField.text = field?.options[row]
         setValueToBuilder(value: textField.text ?? "")
         textField.resignFirstResponder()
+        
+       
     }
 }

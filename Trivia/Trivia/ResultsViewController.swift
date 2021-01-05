@@ -39,7 +39,13 @@ class ResultsViewController: UIViewController {
         
         lblFinish.text = "Resultados"
         
-        lblResults.text = "-Respuestas correctas: \(TriviaBuilderResults.correctAnswers) \n-Respuestas incorrectas: \(TriviaBuilderResults.incorrectAnswers)"
+        lblResults.text =
+        """
+        -Respuestas correctas: \(TriviaBuilderResults.correctAnswers)
+        
+        -Respuestas incorrectas: \(TriviaBuilderResults.incorrectAnswers)
+
+        """
         
     
     }

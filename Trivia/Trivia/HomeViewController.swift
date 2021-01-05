@@ -21,12 +21,19 @@ class HomeViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        createFields()
+    }
+    
     func configUI() {
         btnContinue.configureBtns()
         btnContinue.setTitle("Comenzar", for: .normal)
         
         title = "Inicio"
         
+    
     }
     
     func createFields() {
@@ -94,14 +101,10 @@ class HomeViewController: UIViewController {
                                        }
                                    }
             }
-            
         })
         
     }
 }
-
-
-
 
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -123,5 +126,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 145
         
     }
+    
 
 }
