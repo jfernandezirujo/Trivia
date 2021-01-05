@@ -46,6 +46,7 @@ class TrueOrFalseViewController: UIViewController {
     func configureQuestions(){
         guard let questionAndAnswers = arrayQAA.first else { return }
         lblQuestion.text = questionAndAnswers.question
+        btnContinue.isEnabled = false
         
     }
      
